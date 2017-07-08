@@ -6,6 +6,7 @@ import concat     from 'gulp-concat';
 import connect    from 'gulp-connect';
 import gulpif     from 'gulp-if';
 import image      from 'gulp-image';
+import newer      from 'gulp-newer';
 import sourcemaps from 'gulp-sourcemaps';
 import uglify     from 'gulp-uglify';
 
@@ -87,6 +88,7 @@ gulp.task('html', function() {
 
 gulp.task('image', function () {
   gulp.src([sourcePath+'img/**/*.gif',sourcePath+'img/**/*.jpg',sourcePath+'img/**/*.png',sourcePath+'img/**/*.svg'])
+    .pipe(newer(deployPath+'img/'))
     .pipe(image({
       pngquant: true,
       optipng: false,

@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+$quicksand: 'Quicksand', Arial, Helvetica, 'open sans';
+
+$fontOpacity: 0.8;
+$fontSize: 62.5%;
+
+$fwhite: rgba(255,255,255,$fontOpacity);
+$fblack: rgba(0,0,0,$fontOpacity);
+
+* {
+	box-sizing:border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	-ms-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0); 
+	
+	direction:ltr;
+	 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	font-size: $fontSize;
+}
+body {
+	font-family: $quicksand;
+	font-weight:400;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	
+	font-size:1.2rem;
+	color: $fblack;
+}
+icon {
+	margin-top:15px;
+	display: block;
+	width: 100%;
+	padding-bottom:255px;
+	background-image: url(../img/icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.iconPage {
+	text-align: center;
+	font-size: 2.4rem;
+	p {
+		margin-bottom:0.5rem;
+		font-size:4.0rem;
+		font-weight: bold;
+
+	}
+}
