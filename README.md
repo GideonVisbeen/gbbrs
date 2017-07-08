@@ -40,7 +40,7 @@ Next to the environment you can bump or set the version in the package by adding
 * create a complete copy of the development folder into the staging environment
 
 ## Workflow PRODUCTION will:
-* clean the staging build directory
+* clean the production build directory
 
 * transpile es2015/Babel
 * transpile React/JSX
